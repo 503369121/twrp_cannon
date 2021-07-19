@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/roo
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cannong
-PRODUCT_NAME := omni_cannong
+PRODUCT_DEVICE := cannon
+PRODUCT_NAME := omni_cannon
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi
 PRODUCT_MANUFACTURER := xiaomi
