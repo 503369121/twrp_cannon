@@ -1,7 +1,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="cannong"
+FDEVICE="cannon"
 #set -o xtrace
 
 fox_get_target_device() {
