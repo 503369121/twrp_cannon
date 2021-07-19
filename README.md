@@ -1,10 +1,10 @@
-# Redmi Note 9T Device Tree
+# Redmi Note 9 Device Tree
 
-The Redmi Note 9T 5G (codenamed _"cannong"_) is Mid-end smartphone from Xiaomi. It was announced in January 2021.
+The Redmi Note 9 5G (codenamed _"cannon"_) is Mid-end smartphone from Xiaomi. It was announced in January 2021.
 
 ## Specsheet
 
-| Device                  | Redmi Note 9T 5G                                                           |
+| Device                  | Redmi Note 9 5G                                                           |
 | ----------------------- | :------------------------------------------------------------------------- |
 | SoC                     | MediaTek Dimensity 800U 5G (7 nm)                                          |
 | CPU                     | Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)                    |
@@ -22,4 +22,4 @@ The Redmi Note 9T 5G (codenamed _"cannong"_) is Mid-end smartphone from Xiaomi. 
 
 ## Device picture
 
-![Redmi Note 9T 5G](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9t-5g-1.jpg)
+![Redmi Note 9 5G](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-5g-1.jpg)
