@@ -49,7 +49,7 @@ TWRP_REQUIRED_MODULES += \
     me.twrp.twrpapp.apk \
     privapp-permissions-twrpapp.xml
 
-ifeq ($(TARGET_DEVICE), cannong)
+ifeq ($(TARGET_DEVICE), cannon)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
 
