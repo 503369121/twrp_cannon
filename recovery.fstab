@@ -1,0 +1,40 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+# <mount_point>  <fstype>  <device>        <device2>                  <flags>
+/data             f2fs     /dev/block/by-name/userdata     flags=fileencryption=aes-256-xts:aes-256-cts:v1
+/cache            ext4     /dev/block/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
+/system_root      ext4     /dev/block/mapper/system                   flags=backup=0
+/vendor           ext4     /dev/block/mapper/vendor                   flags=display="vendor"
+/product          ext4     /dev/block/mapper/product                  flags=display="product"
+
+/super            emmc     /dev/block/by-name/super        flags=display="super";backup=0;flashimg=1
+/boot             emmc     /dev/block/by-name/boot         flags=backup=1;flashimg=1
+/dtbo             emmc     /dev/block/by-name/dtbo         flags=display="dtbo";backup=1;flashimg=1
+/recovery         emmc     /dev/block/by-name/recovery     flags=backup=0;flashimg=1
+/bootloader       emmc     /dev/block/by-name/lk           flags=display="bootloader";backup=1;flashimg=1
+/bootloader2      emmc     /dev/block/by-name/lk2          flags=display="bootloader2";backup=1;flashimg=1
+/cust             ext4     /dev/block/by-name/cust         flags=display="cust";backup=1
+/metadata         ext4     /dev/block/by-name/metadata     flags=display="metadata";backup=1
+/protect_f        ext4     /dev/block/by-name/protect1     flags=display="protect_f";backup=1
+/protect_s        ext4     /dev/block/by-name/protect2     flags=display="protect_s";backup=1
+/nvdata           ext4     /dev/block/by-name/nvdata       flags=display="nvdata";backup=1
+/nvcfg            ext4     /dev/block/by-name/nvcfg        flags=display="nvcfg";backup=1
+/persist          ext4     /dev/block/by-name/persist      flags=display="persist";backup=1
+/nvram            emmc     /dev/block/by-name/nvram        flags=display="nvram";backup=1;flashimg=1
+/proinfo          emmc     /dev/block/by-name/proinfo      flags=display="proinfo";backup=1;flashimg=1
+/logo             emmc     /dev/block/by-name/logo         flags=display="logo";backup=1;flashimg=1
+/tee1             emmc     /dev/block/by-name/tee1         flags=display="trustzone1";backup=1;flashimg=1
+/tee2             emmc     /dev/block/by-name/tee2         flags=display="trustzone2";backup=1;flashimg=1
+/vbmeta           emmc     /dev/block/by-name/vbmeta       flags=display="vbmeta";backup=1;flashimg=1
+/vbmeta_system           emmc     /dev/block/by-name/vbmeta_system       flags=display="vbmeta_system";backup=1;flashimg=1
+/vbmeta_vendor           emmc     /dev/block/by-name/vbmeta_vendor       flags=display="vbmeta_vendor";backup=1;flashimg=1
+
+/para             emmc     /dev/block/by-name/para
+/misc             emmc     /dev/block/by-name/misc
+/persistent       emmc     /dev/block/by-name/frp
+
+
+/external_sd      vfat     /dev/block/sdc41  /dev/block/sdc           flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
+/usb-otg          vfat     /dev/block/sdd1  /dev/block/sdd                     flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
+

@@ -34,10 +34,9 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_DEVICE := cannon
 PRODUCT_NAME := omni_cannon
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi
+PRODUCT_MODEL := M2007J22C
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_RELEASE_NAME := Redmi Redmi
-
+PRODUCT_RELEASE_NAME := Redmi M2007J22C
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
